@@ -1,5 +1,5 @@
 def zwaliduj(a):
-    if a<=0:
+    if a <= 0:
         print("Proszę podać poprawną liczbę")
         return False
     return True
@@ -24,11 +24,12 @@ def podaj_srednie_spalanie():
 
 
 def oblicz_zuzycie(a, b):
-    wynik = a/100 * b
-    print(f"Przewidywane zużycie paliwa dla trasy o długości {a} km, przy średnim spalaniu {b} litrów na 100 kilometrów wynosi {wynik:.2f} litrów")
+    wynik = a / 100 * b
+    print(
+        f"Przewidywane zużycie paliwa dla trasy o długości {a} km, przy średnim spalaniu {b} litrów na 100 kilometrów wynosi {wynik:.2f} litrów")
     print(f"Przewidywany koszt paliwa przy cenie 6.5zł/l wyniesie {wynik * 6.5:.2f}zł")
 
 
-x = podaj_odleglosc()
-y = podaj_srednie_spalanie()
-oblicz_zuzycie(x, y)
+odleglosc = podaj_odleglosc()
+srednie_spalanie = podaj_srednie_spalanie()
+oblicz_zuzycie(odleglosc, srednie_spalanie)
