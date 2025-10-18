@@ -11,7 +11,7 @@ def podaj_a():
         return bok_a if zwaliduj(bok_a) else podaj_a()
     except ValueError:
         print("Proszę podać poprawną długośc dla boku a")
-        podaj_a()
+        return podaj_a()
 
 
 def podaj_b():
@@ -20,7 +20,7 @@ def podaj_b():
         return bok_b if zwaliduj(bok_b) else podaj_b()
     except ValueError:
         print("Proszę podać poprawną długość  dla boku b")
-        podaj_b()
+        return podaj_b()
 
 
 def oblicz(a, b):
