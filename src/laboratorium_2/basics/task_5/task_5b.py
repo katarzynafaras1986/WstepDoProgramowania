@@ -6,7 +6,16 @@
 # Dopisz do pliku notwania_gieldowe.txt, w kolejnej linii dane dotyczące nowej spółki: ALR, 113.
 # Wydrukuj każdą linię ponownie do konsoli
 
+nazwa_pliku = "C:\\Users\\73136\\notowania_gieldowe.txt"
 
-with open("nazwa_pliku.txt", "r") as f:
+
+nowy_tekst = "ALR, 113.\n"
+
+with open(nazwa_pliku, 'a') as plik:
+    plik.write("\n" + nowy_tekst)
+
+with open(nazwa_pliku, "r") as f:
     for linia in f:
         print(linia, end='')
+
+open(nazwa_pliku, "r")
