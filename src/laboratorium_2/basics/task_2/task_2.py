@@ -5,16 +5,14 @@ x=input("liczba 1")
 y=input("liczba 2")
 z=input("liczba 3")
 
-def uporzadkuj_liczby(a,b, c):
-    if a < b:
-        if b < c:
-            print(a,b,c)
-        elif b > c:
-            print(a,c,b)
+def uporzadkuj_liczby(a, b, c):
+    if a > b:
+        a, b = b, a
+    if b > c:
+        b, c = c, b
+    if a > b:
+        a, b = b, a
 
-
-    elif y < z:
-        if z < x:
-            print(x,y,z)
+    print(f"Liczby w kolejności rosnącej: {a}, {b}, {c}")
 
 uporzadkuj_liczby(x,y,z)
