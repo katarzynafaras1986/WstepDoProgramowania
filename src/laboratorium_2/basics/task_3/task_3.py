@@ -11,9 +11,9 @@
 nazwa_pliku = "Raport_maj.xlsx"
 
 def sprawdz_rozszerzeanie(nazwa_pliku, rozszerzenie):
-    if nazwa_pliku.split(".")[1] == rozszerzenie:
+    if nazwa_pliku.endswith(rozszerzenie):
         print("Tak")
     else:
         print("Nie")
 
-sprawdz_rozszerzeanie(nazwa_pliku, "xlsx")
+sprawdz_rozszerzeanie(nazwa_pliku, ".xlsx")
