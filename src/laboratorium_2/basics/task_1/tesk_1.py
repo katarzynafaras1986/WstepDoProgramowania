@@ -17,7 +17,7 @@ liczba_punktow = podaj_liczbe_punktow()
 
 if liczba_punktow > 80:
     print("Zaliczasz egzamin w terminie 0")
-elif liczba_punktow < 80 and liczba_punktow > 50:
+elif liczba_punktow <= 80 and liczba_punktow >= 50:
     print("Możesz poprawić  wynik")
 elif liczba_punktow < 50:
     print("Musisz poprawić wynik")
