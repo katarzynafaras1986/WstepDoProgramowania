@@ -8,4 +8,4 @@ def sprawdz_wielkosc_litery(litera):
         print(f"{litera} jest małą literą")
 
 
-sprawdz_wielkosc_litery(input(f"Wprowadź literę"))
+sprawdz_wielkosc_litery(input(f"Wprowadź literę: "))
