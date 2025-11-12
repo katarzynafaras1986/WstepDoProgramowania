@@ -5,25 +5,26 @@
 # b)
 # Dopisz do pliku notwania_gieldowe.txt, w kolejnej linii dane dotyczące nowej spółki: ALR, 113.
 # Wydrukuj każdą linię ponownie do konsoli
-
+import os.path
 from pathlib import Path
 
 nazwa_pliku = "notowania_gieldowe.txt"
+sciezka_skryptu = os.path.dirname(os.path.abspath("task_5b.py"))
 
-def znajdz_plik(nazwa_pliku, katalog_startowy="."):
+def znajdz_plik(nazwa_pliku, katalog_startowy):
     sciezka_startowa = Path(katalog_startowy)
     for sciezka in sciezka_startowa.rglob(nazwa_pliku):
         return sciezka
     return None
 
-znaleziona_sciezka = znajdz_plik(nazwa_pliku)
+znaleziona_sciezka = znajdz_plik(nazwa_pliku, sciezka_skryptu)
 
 if znaleziona_sciezka:
     print(f"Plik '{nazwa_pliku}' znaleziono w: {znaleziona_sciezka}")
     nowy_tekst = "ALR, 113.\n"
 
     with open(nazwa_pliku, 'a') as plik:
-        plik.write("\n" + nowy_tekst)
+        plik.write(nowy_tekst)
     with open(znaleziona_sciezka, "r") as f:
         for linia in f:
             print(linia, end='')
