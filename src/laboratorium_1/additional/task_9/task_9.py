@@ -1,3 +1,6 @@
+# Zad. 9:
+# Napisz kalkulator, który wyświetli wyniki dodawania, odejmowania, mnożenia, dzielenia
+# i potęgowania 2 liczb podanych przez użytkownika.
 def wyswietl_menu():
     print("Wybierz jedną z opcji:")
     print("1. Dodawanie")
@@ -48,6 +51,7 @@ def podaj_nr_opcji():
         print("Proszę podać poprawny numer opcji od 1 do 4")
         return podaj_nr_opcji()
 
+
 def zwaliduj_dzielnik(dzielnik):
     if dzielnik == 0:
         print("Nie dzielimy przez zero!")
@@ -55,6 +59,6 @@ def zwaliduj_dzielnik(dzielnik):
     else:
         return dzielnik
 
+
 wyswietl_menu()
 wykonaj_operacje(podaj_nr_opcji())
-

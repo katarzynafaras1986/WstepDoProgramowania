@@ -1,3 +1,15 @@
+# Zad. 1:
+# A) Sprawdź w interpreterze typ wyników określonych działań - type( x ) i wyjaśnij, co
+# oznaczają poszczególne operatory?
+# 1. 1 + 2
+# 2. 1 + 4.5
+# 3. 3 / 2
+# 4. 4 / 2
+# 5. 3 // 2
+# 6. -3 // 2
+# 7. 11 % 2
+# 8. 2 ** 10
+# 9. 8 ** (1/3)
 #moja metoda do drukowania wników
 def print_result(result, subsection):
     print(f"Zadanie_1_A.{subsection} Wynik to: {result}, typ: {type(result)}")

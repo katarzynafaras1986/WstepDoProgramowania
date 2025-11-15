@@ -1,3 +1,11 @@
+# Zad. 1:
+# B) Sprawdź i wyjaśnij działanie następujących instrukcji:
+# 1. int(3.0)
+# 2. float(3)
+# 3. float("3")
+# 4. str(12.4)
+# 5. bool(0)
+
 #1. zamiana floata na intigera
 data= 3.0
 print(int(data))

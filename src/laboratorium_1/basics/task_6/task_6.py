@@ -1,3 +1,10 @@
+# Zad. 6:
+# Napisz skrypt, który pobiera od użytkownika drogę pokonaną przez samochód oraz
+# średnie spalanie (w litrach na 100 km) i wyświetli informację o przewidywanym zużyciu
+# paliwa oraz o szacowanych kosztach podróży (cena paliwa 6.5 zł/l).
+# A) Zmodyfikuj skrypt tak, aby długość przejechanej drogi była generowana losowo
+# (liczba całkowita z zakresu ), a użytkownik podawał aktualną cenę paliwa za litr.
+# B) Zmodyfikuj zadania 6 tak, aby wyświetlanie wyników wykorzystywało f-string.
 def zwaliduj(a):
     if a <= 0:
         print("Proszę podać poprawną liczbę")

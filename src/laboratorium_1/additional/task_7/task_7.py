@@ -1,3 +1,7 @@
+# Zad. 7:
+# Narysuj schemat blokowy algorytmu i napisz program rozwiązywania rownania
+# liniowego ax + b = 0 , gdzie a i b są wspołczynnikami podawanymi przez uzytkownika.
+# Do rysowania schematow blogowych skorzysta z narzędzia draw.io .
 def podaj_a():
     try:
         liczba_a = float(input(f"Podaj liczbę wymierną a w formacie dziesiętnym:"))

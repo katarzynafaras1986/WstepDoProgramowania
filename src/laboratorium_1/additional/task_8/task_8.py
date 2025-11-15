@@ -1,3 +1,7 @@
+# Zad. 8:
+# Narysuj schemat blokowy algorytmu i napisz program rozwiązywania rownania
+# kwadratowego ax2 + bx + c = 0, gdzie a, b i c są wspołczynnikami podawanymi przez
+# uzytkownika.
 from math import sqrt
 
 

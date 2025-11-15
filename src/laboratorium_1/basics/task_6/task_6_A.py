@@ -1,3 +1,10 @@
+# Zad. 6:
+# Napisz skrypt, który pobiera od użytkownika drogę pokonaną przez samochód oraz
+# średnie spalanie (w litrach na 100 km) i wyświetli informację o przewidywanym zużyciu
+# paliwa oraz o szacowanych kosztach podróży (cena paliwa 6.5 zł/l).
+# A) Zmodyfikuj skrypt tak, aby długość przejechanej drogi była generowana losowo
+# (liczba całkowita z zakresu ), a użytkownik podawał aktualną cenę paliwa za litr.
+# B) Zmodyfikuj zadania 6 tak, aby wyświetlanie wyników wykorzystywało f-string.
 import random
 
 
@@ -7,13 +14,15 @@ def zwaliduj(a):
         return False
     return True
 
+
 def podaj_cene_paliwa():
     try:
         cena_paliwa = float(input(f"Podaj cenę paliwa:"))
-        return cena_paliwa if zwaliduj(cena_paliwa) else podaj_srednie_spalanie()
+        return cena_paliwa if zwaliduj(cena_paliwa) else podaj_cene_paliwa()
     except ValueError:
         print("Proszę podać poprawną liczbę")
-        return podaj_srednie_spalanie()
+        return podaj_cene_paliwa()
+
 
 def podaj_srednie_spalanie():
     try:
