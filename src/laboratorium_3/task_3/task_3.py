@@ -7,20 +7,16 @@
 # • Kwiatowa,
 # • Kasztanowa,
 # • Polna.
-# Zad 4. dodatkowe
-# Zamówiłeś w restauracji z grupą x przyjaciół, n potraw (liczbę zamówionych dań i liczbę gości, za
-# każdym razem wskazuje użytkownik), następnie dla każdej potrawy podajesz jej cenę.
-# Korzystając z pętli while napisz program, który pozwoli obliczyć średnią cenę zamówionej potrawy.
-# Podziel sprawiedliwe rachunek miedzy wszystkich gości.
 
 lista_ulic = ['Jagodowa', 'Lipowa', 'Kwiatowa', 'Kasztanowa', 'Polna']
 
 
 def wypisz_liste_ulic(lista_ulic, liczba_blokow, liczba_mieszkan):
-    for ulic in lista_ulic:
-        for i in range(liczba_blokow + 1):
-            for j in range(liczba_mieszkan + 1):
-                print(ulic, i, j)
-
+    adresy = []
+    for ulica in lista_ulic:
+        for i in range(1, liczba_blokow + 1):
+            for j in range(1, liczba_mieszkan + 1):
+                adresy.append(f"{ulica} {i}/{j}")
+    print(adresy)
 
 wypisz_liste_ulic(lista_ulic, 5, 10)
