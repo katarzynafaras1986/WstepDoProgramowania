@@ -13,11 +13,12 @@
 
 paliwo = 100
 paliwo_zuzyte_na_sekunde = 10
-czas = 0
+czas = 1
 
 while 0 < paliwo:
-    czas += 1
     paliwo -= paliwo_zuzyte_na_sekunde
-    print(f"Po {czas} sekundach lotu pozostało {paliwo} litrów paliwa")
+    fraza = "sekundzie" if czas == 1 else "sekundach"
+    print(f"Po {czas} {fraza} lotu pozostało {paliwo} litrów paliwa")
+    czas += 1
 
 
