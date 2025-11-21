@@ -32,5 +32,4 @@ def policz_srednia_a():
         licznik += 1
 
 
-# A
 policz_srednia_a()

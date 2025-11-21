@@ -28,7 +28,7 @@ def policz_koszty_zamowien(liczba_gosci, liczba_zamówionych_dan):
     numer_dania = 1
     cena = 0
     while numer_dania <= liczba_zamówionych_dan:
-        cena += podaj_cene(1)
+        cena += podaj_cene(numer_dania)
         numer_dania += 1
     print(f"Łączna kwota rachunku: {cena:.2f} zł")
     print(f"Srednia cena: {cena / liczba_zamówionych_dan:.2f} zł")

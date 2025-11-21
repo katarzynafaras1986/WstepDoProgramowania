@@ -11,7 +11,7 @@
 
 print("Program który wczyta (zmienną) imię oraz wyświetli tekst „Witaj” oraz wczytane imię.")
 imie = input("Podaj imię: ")
-print("Witaj", imie)
+print("Witaj", imie[0:1].upper() + imie[1:len(imie)+1])
 
 print("Program który wczyta (zmienną) wiek oraz wyświetli tekst „Twój wiek to: ” oraz wczytany wiek.")
 wiek = input("Podaj swój wiek: ")

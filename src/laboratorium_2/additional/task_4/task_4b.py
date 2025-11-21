@@ -23,9 +23,11 @@
 def oblicz(liczba_goli):
     punkty = liczba_goli * 10
     if liczba_goli >= 5:
-        punkty += 5
+        ilosc_malych_bonusow = liczba_goli // 5
+        punkty += ilosc_malych_bonusow * 5
     if liczba_goli >= 10:
-        punkty += 10
+        ilosc_duzych_bonusow = liczba_goli // 10
+        punkty += ilosc_duzych_bonusow * 10
     print(f"Łączna liczba punktów (z bonusami) to: {punkty}.")
 
 
