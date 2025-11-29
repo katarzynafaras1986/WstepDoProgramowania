@@ -31,5 +31,5 @@ lancuch2 = input("Podaj lancuch2: ")
 
 print("Połączone łańcuchy 1 i 2: ", lancuch + lancuch2)
 
-print("Połączone połówki: ", lancuch[:len(lancuch) // 2] + lancuch2[:len(lancuch2) // 2])
+print("Połączone połówki: ", lancuch[:len(lancuch) // 2] + lancuch2[len(lancuch2) // 2:])
 
