@@ -16,3 +16,17 @@
 # - sprawdź, czy wartość "Pułkownik" znajduje się w krotce stopnie i przypisz do zmiennej
 # Pułkownik_wstepowanie.
 # W wydrukuj otrzymane zmienne do konsoli w podanej kolejności.
+
+stopnie = (
+ "Szeregowy",
+ "Kapral",
+ "Sierżancie",
+ "Porucznik",
+ "Kapitan",
+ "Major",
+ "Pułkownik",
+)
+
+ilosc = len(stopnie)
+
+print("Ilość: ", ilosc)
