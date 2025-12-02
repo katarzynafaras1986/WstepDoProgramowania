@@ -5,6 +5,8 @@
 moja_lista = [1, 17, 3, 5, 3, 4, 86, 90, 2, 21]
 moja_lista2 = [181, 66, 36]
 
+print('Moja lista: ', moja_lista)
+print('Moja lista2: ', moja_lista2)
 print('Pierwszy element: ', moja_lista[0])
 print('Ostatni element: ', moja_lista[-1])
 print('Długośc listy: ', len(moja_lista))
@@ -12,13 +14,15 @@ print('Największa wartość: ', max(moja_lista))
 print('Najmniejsza wartość: ', min(moja_lista))
 print('Posortowana: ', sorted(moja_lista))
 moja_lista.append(40)
-print('Z dodanym elementem: ', moja_lista)
-print('Z dodanym elementem w indexie 5: ', moja_lista.insert(5, 50))
+print('Z dodanym elementem \"40\": ', moja_lista)
+moja_lista.insert(5, 50)
+print('Z dodanym elementem \"50\" w indexie 5: ', moja_lista)
 print('Ostatni zwrócony element: ', moja_lista.pop())
+print('Moja lista po zwróceniu elementu \"40\": ', moja_lista)
 moja_lista.reverse()
 print('Odwrócona lista: ', moja_lista)
 moja_lista3 = moja_lista + moja_lista2
-print('Połączona lista 2 i 3: ', moja_lista3)
+print('Połączona lista 1 i 2: ', moja_lista3)
 moja_lista4 = moja_lista + moja_lista2
 print('Połączenie listy 1 i 2 pięciokrotnie: ', moja_lista4 * 5)
 print('Od początku do elementu 5: ', moja_lista[:5])

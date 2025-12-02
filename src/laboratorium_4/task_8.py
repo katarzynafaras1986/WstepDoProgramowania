@@ -27,6 +27,15 @@ stopnie = (
  "Pułkownik",
 )
 
-ilosc = len(stopnie)
+ilosc_stopni = len(stopnie)
 
-print("Ilość: ", ilosc)
+print("ilosc_stopni: ", ilosc_stopni)
+
+major_index = stopnie.index("Major")
+
+print("major_index: ", major_index)
+
+pulkownik_wstepowanie = "Pułkownik" in stopnie
+
+print("pulkownik_wstepowanie: ", pulkownik_wstepowanie)
+
