@@ -25,7 +25,7 @@ moja_lista3 = moja_lista + moja_lista2
 print('Połączona lista 1 i 2: ', moja_lista3)
 moja_lista4 = moja_lista + moja_lista2
 print('Połączenie listy 1 i 2 pięciokrotnie: ', moja_lista4 * 5)
-print('Od początku do elementu 5: ', moja_lista[:5])
+print('Od początku do elementu o indexie 5: ', moja_lista[:5])
 print('Od elementu o inexie 5 do końca: ', moja_lista[5:])
 print('Zakres elementów 2-8 z krokiem 2: ', moja_lista[2:8:2])
 print('Odwrócenie listy: ', moja_lista[::-1])
