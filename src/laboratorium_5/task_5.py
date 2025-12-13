@@ -9,14 +9,18 @@
 # b. TypeError, gdy argumenty mają niewłaściwe typy
 # c. IndexError, gdy indeksy wychodzą poza zakres
 # 5. (Dla chętnych – napisanie testów przy pomocy biblioteki pytest)
-def zamien_miejscami_elementy_listy(lista, inex1, index2):
+def zamien_miejscami_elementy_listy(lista, index1, index2):
     if len(lista) == 0:
         raise ValueError("Lista nie może być pusta")
-    if isinstance(inex1, int):
+    if not isinstance(index1, int):
         raise TypeError("Index1 musi być intem")
-    if isinstance(index2, int):
+    if not isinstance(index2, int):
         raise TypeError("Index2 musi być intem")
-    buffer = lista[inex1]
-    lista[inex1] = lista[index2]
+    if abs(index1) > len(lista) -1:
+        raise IndexError("OutOfBoundException;)")
+    buffer = lista[index1]
+    lista[index1] = lista[index2]
     lista[index2] = buffer
-    if index1 len(lista) == 0:
+    return lista
+
+print(zamien_miejscami_elementy_listy([1,2,3,4,5], 0, 4))
