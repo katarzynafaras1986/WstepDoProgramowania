@@ -5,6 +5,20 @@
 from math import sqrt
 
 def oblicz_pierwiastki_funkcji(a,b,c):
+    """
+    Przyjmuje 3 liczby jako argumenty.
+
+    Args:
+        a (int/float): Pierwsza liczba.
+        b (int/float): Druga liczba.
+        c (int/float): Trzecia liczba.
+
+    Raises:
+        ValueError: "A nie może być równe zero"
+
+    Returns:
+        string: Wynik obliczenia pierwiastków funkcji kwadratowej.
+    """
     zwaliduj_a(a)
     rozwiaz_rownanie(a,b,c)
 
@@ -22,7 +36,7 @@ def rozwiaz_rownanie(a, b, c):
         print(
             f"Dla a równego {a}, b równego {b} oraz c ={c}, delta jest równa {delta}. x1 wynosi {(-b - sqrt(delta)) / (2 * a)} a x2 wynosi {(-b + sqrt(delta)) / (2 * a)}")
     elif delta < 0:
-        print(f"Delta jest równa {delta}. Brak rozwiązań")
+        print(f"Dla a równego {a}, b równego {b} oraz c ={c}, delta jest równa {delta}. Brak rozwiązań")
 
 oblicz_pierwiastki_funkcji(1,2,3)
 
