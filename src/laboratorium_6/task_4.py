@@ -18,6 +18,8 @@ print(f"Iloczyn skalarny ba: {b @ a}")
 c = np.array([[1,2,3],
              [4,5,6],
              [7,8,9]])
+print(f"Iloczyn skalarny ac: {a @ c}")
+print(f"Iloczyn skalarny ca: {c @ a}")
 
-# Nie można ponieważ iloczyn skalarny 2 tablic wymnaża wiersz przez kolumne,
+# Można wymnożyć a * c natomiast c * a nie można ponieważ iloczyn skalarny 2 tablic wymnaża wiersz przez kolumne,
 # a po zmianie kolumn na 3 nie jest w stanie wymnożyć 2 pozycji z wiersza pierwszej tabeli z 3 pozycjami z kolumny drugiej tabeli.
