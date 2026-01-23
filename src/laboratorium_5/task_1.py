@@ -4,7 +4,7 @@
 # kwadratowa. Skorzystaj z biblioteki math. Napisz dokumentację tej funkcji, kiedy jest co obliczane itp.
 from math import sqrt
 
-def oblicz_pierwiastki_funkcji(a,b,c):
+def oblicz_pierwiastki_funkcji(a, b, c):
     """
     Przyjmuje 3 liczby jako argumenty.
 
@@ -19,14 +19,17 @@ def oblicz_pierwiastki_funkcji(a,b,c):
     Returns:
         string: Wynik obliczenia pierwiastków funkcji kwadratowej.
     """
-    zwaliduj_a(a)
-    rozwiaz_rownanie(a,b,c)
+    zwaliduj_a(a, b, c)
+    rozwiaz_rownanie(a, b, c)
 
-def zwaliduj_a(a):
+
+def zwaliduj_a(a, b, c):
     if a == 0:
-        print(f"Dla a równego {a}, b równego {b} oraz c równego {c} - To nie jest równanie kwadratowe, podaj liczbę różną od zera")
-        raise ValueError("A nie może być równe zero")
+        print(
+            f"Dla a równego {a}, b równego {b} oraz c równego {c} - To nie jest równanie kwadratowe, podaj liczbę różną od zera")
+        raise ValueError("a nie może być równe zero")
     return True
+
 
 def rozwiaz_rownanie(a, b, c):
     delta = b ** 2 - 4 * a * c
@@ -38,11 +41,7 @@ def rozwiaz_rownanie(a, b, c):
     elif delta < 0:
         print(f"Dla a równego {a}, b równego {b} oraz c równego {c}, delta jest równa {delta}. Brak rozwiązań")
 
-oblicz_pierwiastki_funkcji(1,2,3)
-oblicz_pierwiastki_funkcji(1,-5,6)
-oblicz_pierwiastki_funkcji(0,2,3)
 
-
-
-
-
+oblicz_pierwiastki_funkcji(1, 2, 3)
+oblicz_pierwiastki_funkcji(1, -5, 6)
+oblicz_pierwiastki_funkcji(0, 2, 3)
