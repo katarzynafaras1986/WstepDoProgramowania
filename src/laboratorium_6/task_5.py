@@ -2,4 +2,10 @@
 # kraj rosnąco
 import pandas as pd
 
-data = pd.read_csv("/sciezka/do/pliku") # otwieranie pliku
+df = pd.read_csv("dane.csv", sep=';') # otwieranie pliku
+
+df['Marża'] = (df['Sprzedaż'] - df['Koszt']) / df['Sprzedaż']
+
+df_posortowane = df.sort_values(by=['Rok', 'Kraj'], ascending=True)
+
+print(df_posortowane)
